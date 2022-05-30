@@ -34,7 +34,7 @@ body {
   margin: 0 auto 0;
 }
 
-.task-information {
+.todo {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -163,11 +163,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.taskboard__item_edit-on input[type=text] {
+ul li.task_edited input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.taskboard__item_edit-on label {
+ul li.task_edited label {
   display: none;
 }
