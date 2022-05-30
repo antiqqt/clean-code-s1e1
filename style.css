@@ -108,7 +108,7 @@
   margin: 0 0 20px;
 }
 
-.input#newTodo {
+.input_new-todo {
   width: 318px;
 }
 
@@ -155,7 +155,7 @@
 }
 
 /* Completed */
-.taskboard__list#completedTasks .label {
+.taskboard__list_completed .label {
   text-decoration: line-through;
   color: #888;
 }
