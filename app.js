@@ -35,20 +35,22 @@ var createNewTaskElement=function(taskString){
     listItem.className = 'task';
 
     label.innerText=taskString;
-    label.className='todo';
+    label.className='label task__label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="checkbox";
+    checkBox.className="input input_checkbox task__input";
     editInput.type="text";
-    editInput.className="todo";
+    editInput.className="input input_text task__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="button button_edit";
+    editButton.className="button button_edit task__button";
 
-    deleteButton.className="button button_delete";
+    deleteButton.className="button button_delete task__button";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt='';
+    deleteButtonImg.className='button__img';
+
     deleteButton.appendChild(deleteButtonImg);
 
 

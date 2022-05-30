@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg" alt="Image representation of the eisenhower matrix">
       <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
@@ -13,9 +13,9 @@
 
     <article class="todo-list">
       <section class="taskboard" id="addTasks">
-        <label class="taskboard__title" for="newTodo">Add Item</label>
+        <label class="taskboard__title taskboard__title_label" for="newTodo">Add Item</label>
         <div class="taskboard__container">
-          <input class="todo" id="newTodo" type="text">
+          <input class="input input_text" id="newTodo" type="text">
           <button class="button">Add</button>
         </div>
       </section>
@@ -24,21 +24,21 @@
         <h3 class="taskboard__title">Todo</h3>
         <ul class="taskboard__list taskboard__list_incomplete" id="incompleteTasks">
           <li class="task">
-            <input class="checkbox" type="checkbox">
-            <label class="todo">Pay Bills</label>
-            <input class="todo" type="text">
-            <button class="button button_edit">Edit</button>
-            <button class="button button_delete">
-              <img src="./remove.svg" alt="">
+            <input class="input input_checkbox task__input" type="checkbox">
+            <label class="label task__label">Pay Bills</label>
+            <input class="input input_text task__input" type="text">
+            <button class="button button_edit task__button">Edit</button>
+            <button class="button button_delete task__button">
+              <img class="button__img" src="./remove.svg" alt="">
             </button>
           </li>
           <li class="task task_edited">
-            <input class="checkbox" type="checkbox">
-            <label class="todo">Go Shopping</label>
-            <input class="todo" type="text" value="Go Shopping">
-            <button class="button button_edit">Save</button>
-            <button class="button button_delete">
-              <img src="./remove.svg" alt="">
+            <input class="input input_checkbox task__input" type="checkbox">
+            <label class="label task__label">Go Shopping</label>
+            <input class="input input_text task__input" type="text" value="Go Shopping">
+            <button class="button button_edit task__button">Save</button>
+            <button class="button button_delete task__button">
+              <img class="button__img" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
@@ -48,12 +48,12 @@
         <h3 class="taskboard__title">Completed</h3>
         <ul class="taskboard__list taskboard__list_completed" id="completedTasks">
           <li class="task">
-            <input class="checkbox" type="checkbox" checked>
-            <label class="todo">See the Doctor</label>
-            <input class="todo" type="text">
-            <button class="button button_edit">Edit</button>
-            <button class="button button_delete">
-              <img src="./remove.svg" alt="">
+            <input class="input input_checkbox task__input" type="checkbox" checked>
+            <label class="label task__label">See the Doctor</label>
+            <input class="input input_text task__input" type="text">
+            <button class="button button_edit task__button">Edit</button>
+            <button class="button button_delete task__button">
+              <img class="button__img" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
